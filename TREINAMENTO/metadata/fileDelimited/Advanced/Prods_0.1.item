@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_X7A4kAiNEe-1LJuG307aPg" name="Prods" dataPackage="_X7A4kQiNEe-1LJuG307aPg" Server="Localhost 127.0.0.1" FilePath="H:/Drives compartilhados/Projetos Sysvision/Talend/Vivo/Treinamento/Advanced/Hands On/Arquivos Job_5/prods_extract.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_X7A4kQiNEe-1LJuG307aPg" name="default" dataManager="_X7A4kAiNEe-1LJuG307aPg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_X7A4kgiNEe-1LJuG307aPg" id="_wWVNYAiMEe-1LJuG307aPg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_X7A4kwiNEe-1LJuG307aPg" label="Product_ID" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_X7A4lAiNEe-1LJuG307aPg" label="Description" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_X7A4lQiNEe-1LJuG307aPg" label="Manufacturer" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_X7A4lgiNEe-1LJuG307aPg" label="Channel" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_X7A4lwiNEe-1LJuG307aPg" label="Price" length="6" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_X7A4mAiNEe-1LJuG307aPg" label="Update_date" length="-1" talendType="id_Date" pattern="&quot;yyyy/MM/dd&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

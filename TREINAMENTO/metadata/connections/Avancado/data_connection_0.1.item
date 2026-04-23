@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_lNtukGQIEfCvr_ikEGkoYw" name="data_connection" id="_RnpG4GQIEfCvr_ikEGkoYw" label="data_connection" dataPackage="_ldzZF2QIEfCvr_ikEGkoYw" DatabaseType="Oracle with SID" DriverClass="oracle.jdbc.OracleDriver" URL="jdbc:oracle:thin:@10.150.71.219:1521:orcl" dbVersionString="ORACLE_18" Port="1521" Username="origem" Password="enc:system.encryption.key.v1:BnZd4Q8K/5AUrslcFcWMpuz8W3apQ59VGhjxyMZXtHPTxg==" ServerName="10.150.71.219" DatasourceName="" FileFieldName="" SID="orcl" SqlSynthax="" StringQuote="" NullChar="" DbmsId="oracle_id" ProductId="ORACLE" AdditionalParams="" StandardSQL="true" cdcTypeMode="TRIGGER" SQLMode="false" UiSchema="ORIGEM" supportNLS="false">
+    <taggedValue xmi:id="_lNtukWQIEfCvr_ikEGkoYw" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_lPOxgGQIEfCvr_ikEGkoYw" tag="package filter" value=""/>
+    <taggedValue xmi:id="_lPWtUGQIEfCvr_ikEGkoYw" tag="Status" value=""/>
+    <taggedValue xmi:id="_lPWtUWQIEfCvr_ikEGkoYw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_lPWtUmQIEfCvr_ikEGkoYw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_lPWtU2QIEfCvr_ikEGkoYw" tag="Description" value=""/>
+    <taggedValue xmi:id="_lPWtVGQIEfCvr_ikEGkoYw" tag="Author" value=""/>
+    <taggedValue xmi:id="_lPWtVWQIEfCvr_ikEGkoYw" tag="otherParameter"/>
+    <taggedValue xmi:id="_lUdPwGQIEfCvr_ikEGkoYw" tag="DB ProductName" value="Oracle"/>
+    <taggedValue xmi:id="_lUdPwWQIEfCvr_ikEGkoYw" tag="DB ProductVersion" value="Oracle Database 18c Enterprise Edition Release 18.0.0.0.0 - Production&#xA;Version 18.3.0.0.0"/>
+    <taggedValue xmi:id="_lUdPwmQIEfCvr_ikEGkoYw" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <cdcConns xmi:id="_m93ekGZuEfCoJupa3YtxzQ">
+      <cdcTypes xmi:id="_m93ekWZuEfCoJupa3YtxzQ" linkDB="_37kU0GQIEfCvr_ikEGkoYw" cdcConnection="_m93ekGZuEfCoJupa3YtxzQ">
+        <subscribers xmi:id="_m93ek2ZuEfCoJupa3YtxzQ" name="TSUBSCRIBERS" id="_m93ekmZuEfCoJupa3YtxzQ" label="TSUBSCRIBERS" system="true">
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m93elGZuEfCoJupa3YtxzQ" name="TALEND_CDC_TABLE_TO_WATCH" label="TALEND_CDC_TABLE_TO_WATCH" length="35" sourceType="VARCHAR2" talendType="id_String" key="true" nullable="false"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m93elWZuEfCoJupa3YtxzQ" name="TALEND_CDC_SUBSCRIBER_NAME" label="TALEND_CDC_SUBSCRIBER_NAME" length="50" sourceType="VARCHAR2" talendType="id_String" key="true" nullable="false"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m93elmZuEfCoJupa3YtxzQ" name="TALEND_CDC_CREATION_DATE" label="TALEND_CDC_CREATION_DATE" length="50" sourceType="DATE" talendType="id_Date" nullable="false"/>
+        </subscribers>
+        <subscribers xmi:id="_yvujEmZuEfCoJupa3YtxzQ" name="TCDC_CUSTOMER" id="_yvujEGZuEfCoJupa3YtxzQ" label="TCDC_CUSTOMER">
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujE2ZuEfCoJupa3YtxzQ" name="TALEND_CDC_SUBSCRIBERS_NAME" label="TALEND_CDC_SUBSCRIBERS_NAME" length="50" sourceType="VARCHAR2" talendType="id_String" nullable="false"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujFGZuEfCoJupa3YtxzQ" name="TALEND_CDC_STATE" label="TALEND_CDC_STATE" length="1" sourceType="VARCHAR2" talendType="id_String"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujFWZuEfCoJupa3YtxzQ" name="TALEND_CDC_TYPE" label="TALEND_CDC_TYPE" length="1" sourceType="VARCHAR2" talendType="id_String"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujFmZuEfCoJupa3YtxzQ" name="TALEND_CDC_CREATION_DATE" label="TALEND_CDC_CREATION_DATE" length="50" sourceType="DATE" talendType="id_Date"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujF2ZuEfCoJupa3YtxzQ" name="CUSTID" label="CUSTID" length="38" sourceType="NUMBER" talendType="id_BigDecimal" key="true" nullable="false">
+            <initialValue xmi:id="_yvujGGZuEfCoJupa3YtxzQ"/>
+          </feature>
+        </subscribers>
+        <subscribers xmi:id="_yvujGWZuEfCoJupa3YtxzQ" name="TCDC_VIEW_CUSTOMER" id="_yvujEWZuEfCoJupa3YtxzQ" label="TCDC_VIEW_CUSTOMER">
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujGmZuEfCoJupa3YtxzQ" name="TALEND_CDC_SUBSCRIBERS_NAME" label="TALEND_CDC_SUBSCRIBERS_NAME" length="50" sourceType="VARCHAR2" talendType="id_String" nullable="false"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujG2ZuEfCoJupa3YtxzQ" name="TALEND_CDC_TYPE" label="TALEND_CDC_TYPE" length="1" sourceType="VARCHAR2" talendType="id_String"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujHGZuEfCoJupa3YtxzQ" name="TALEND_CDC_CREATION_DATE" label="TALEND_CDC_CREATION_DATE" length="50" sourceType="DATE" talendType="id_Date"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujHWZuEfCoJupa3YtxzQ" name="CUSTID" label="CUSTID" length="38" sourceType="NUMBER" talendType="id_BigDecimal" key="true" nullable="false">
+            <initialValue xmi:id="_yvujHmZuEfCoJupa3YtxzQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujH2ZuEfCoJupa3YtxzQ" name="CUSTOMERNAME" label="CUSTOMERNAME" length="255" sourceType="VARCHAR2" talendType="id_String">
+            <initialValue xmi:id="_yvujIGZuEfCoJupa3YtxzQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujIWZuEfCoJupa3YtxzQ" name="CUSTOMERADDRESS" label="CUSTOMERADDRESS" length="255" sourceType="VARCHAR2" talendType="id_String">
+            <initialValue xmi:id="_yvujImZuEfCoJupa3YtxzQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujI2ZuEfCoJupa3YtxzQ" name="IDSTATE" label="IDSTATE" length="38" sourceType="NUMBER" talendType="id_BigDecimal">
+            <initialValue xmi:id="_yvujJGZuEfCoJupa3YtxzQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujJWZuEfCoJupa3YtxzQ" name="ID2" label="ID2" length="38" sourceType="NUMBER" talendType="id_BigDecimal">
+            <initialValue xmi:id="_yvujJmZuEfCoJupa3YtxzQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujJ2ZuEfCoJupa3YtxzQ" name="REGTIME" label="REGTIME" length="255" sourceType="VARCHAR2" talendType="id_String">
+            <initialValue xmi:id="_yvujKGZuEfCoJupa3YtxzQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujKWZuEfCoJupa3YtxzQ" name="REGISTERTIME" label="REGISTERTIME" length="7" sourceType="DATE" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+            <initialValue xmi:id="_yvujKmZuEfCoJupa3YtxzQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujK2ZuEfCoJupa3YtxzQ" name="SUM1" label="SUM1" length="126" sourceType="FLOAT" talendType="id_Float">
+            <initialValue xmi:id="_yvujLGZuEfCoJupa3YtxzQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujLWZuEfCoJupa3YtxzQ" name="SUM2" label="SUM2" length="126" sourceType="FLOAT" talendType="id_Float">
+            <initialValue xmi:id="_yvujLmZuEfCoJupa3YtxzQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujL2ZuEfCoJupa3YtxzQ" name="SUM3" label="SUM3" length="126" sourceType="FLOAT" talendType="id_Float">
+            <initialValue xmi:id="_yvujMGZuEfCoJupa3YtxzQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujMWZuEfCoJupa3YtxzQ" name="SUM4" label="SUM4" length="126" sourceType="FLOAT" talendType="id_Float">
+            <initialValue xmi:id="_yvujMmZuEfCoJupa3YtxzQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujM2ZuEfCoJupa3YtxzQ" name="SUM5" label="SUM5" length="126" sourceType="FLOAT" talendType="id_Float">
+            <initialValue xmi:id="_yvujNGZuEfCoJupa3YtxzQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujNWZuEfCoJupa3YtxzQ" name="SUM6" label="SUM6" length="126" sourceType="FLOAT" talendType="id_Float">
+            <initialValue xmi:id="_yvujNmZuEfCoJupa3YtxzQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yvujN2ZuEfCoJupa3YtxzQ" name="SUM7" label="SUM7" length="126" sourceType="FLOAT" talendType="id_Float">
+            <initialValue xmi:id="_yvujOGZuEfCoJupa3YtxzQ"/>
+          </feature>
+        </subscribers>
+        <subscribers xmi:id="_bBSx0WfBEfCppuAoUVneOQ" name="TCDC_CUSTS" id="_bBRjsGfBEfCppuAoUVneOQ" label="TCDC_CUSTS">
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx0mfBEfCppuAoUVneOQ" name="TALEND_CDC_SUBSCRIBERS_NAME" label="TALEND_CDC_SUBSCRIBERS_NAME" length="50" sourceType="VARCHAR2" talendType="id_String" nullable="false"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx02fBEfCppuAoUVneOQ" name="TALEND_CDC_STATE" label="TALEND_CDC_STATE" length="1" sourceType="VARCHAR2" talendType="id_String"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx1GfBEfCppuAoUVneOQ" name="TALEND_CDC_TYPE" label="TALEND_CDC_TYPE" length="1" sourceType="VARCHAR2" talendType="id_String"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx1WfBEfCppuAoUVneOQ" name="TALEND_CDC_CREATION_DATE" label="TALEND_CDC_CREATION_DATE" length="50" sourceType="DATE" talendType="id_Date"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx1mfBEfCppuAoUVneOQ" name="CUSTID" label="CUSTID" length="38" sourceType="NUMBER" talendType="id_BigDecimal" key="true" nullable="false">
+            <initialValue xmi:id="_bBSx12fBEfCppuAoUVneOQ"/>
+          </feature>
+        </subscribers>
+        <subscribers xmi:id="_bBSx2GfBEfCppuAoUVneOQ" name="TCDC_VIEW_CUSTS" id="_bBSx0GfBEfCppuAoUVneOQ" label="TCDC_VIEW_CUSTS">
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx2WfBEfCppuAoUVneOQ" name="TALEND_CDC_SUBSCRIBERS_NAME" label="TALEND_CDC_SUBSCRIBERS_NAME" length="50" sourceType="VARCHAR2" talendType="id_String" nullable="false"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx2mfBEfCppuAoUVneOQ" name="TALEND_CDC_TYPE" label="TALEND_CDC_TYPE" length="1" sourceType="VARCHAR2" talendType="id_String"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx22fBEfCppuAoUVneOQ" name="TALEND_CDC_CREATION_DATE" label="TALEND_CDC_CREATION_DATE" length="50" sourceType="DATE" talendType="id_Date"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx3GfBEfCppuAoUVneOQ" name="CUSTID" label="CUSTID" length="38" sourceType="NUMBER" talendType="id_BigDecimal" key="true" nullable="false">
+            <initialValue xmi:id="_bBSx3WfBEfCppuAoUVneOQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx3mfBEfCppuAoUVneOQ" name="CUSTOMERNAME" label="CUSTOMERNAME" length="255" sourceType="VARCHAR2" talendType="id_String">
+            <initialValue xmi:id="_bBSx32fBEfCppuAoUVneOQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx4GfBEfCppuAoUVneOQ" name="CUSTOMERADDRESS" label="CUSTOMERADDRESS" length="255" sourceType="VARCHAR2" talendType="id_String">
+            <initialValue xmi:id="_bBSx4WfBEfCppuAoUVneOQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx4mfBEfCppuAoUVneOQ" name="IDSTATE" label="IDSTATE" length="38" sourceType="NUMBER" talendType="id_BigDecimal">
+            <initialValue xmi:id="_bBSx42fBEfCppuAoUVneOQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx5GfBEfCppuAoUVneOQ" name="ID2" label="ID2" length="38" sourceType="NUMBER" talendType="id_BigDecimal">
+            <initialValue xmi:id="_bBSx5WfBEfCppuAoUVneOQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx5mfBEfCppuAoUVneOQ" name="REGTIME" label="REGTIME" length="255" sourceType="VARCHAR2" talendType="id_String">
+            <initialValue xmi:id="_bBSx52fBEfCppuAoUVneOQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx6GfBEfCppuAoUVneOQ" name="REGISTERTIME" label="REGISTERTIME" length="7" sourceType="DATE" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+            <initialValue xmi:id="_bBSx6WfBEfCppuAoUVneOQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx6mfBEfCppuAoUVneOQ" name="SUM1" label="SUM1" length="126" sourceType="FLOAT" talendType="id_Float">
+            <initialValue xmi:id="_bBSx62fBEfCppuAoUVneOQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx7GfBEfCppuAoUVneOQ" name="SUM2" label="SUM2" length="126" sourceType="FLOAT" talendType="id_Float">
+            <initialValue xmi:id="_bBSx7WfBEfCppuAoUVneOQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx7mfBEfCppuAoUVneOQ" name="SUM3" label="SUM3" length="126" sourceType="FLOAT" talendType="id_Float">
+            <initialValue xmi:id="_bBSx72fBEfCppuAoUVneOQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx8GfBEfCppuAoUVneOQ" name="SUM4" label="SUM4" length="126" sourceType="FLOAT" talendType="id_Float">
+            <initialValue xmi:id="_bBSx8WfBEfCppuAoUVneOQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx8mfBEfCppuAoUVneOQ" name="SUM5" label="SUM5" length="126" sourceType="FLOAT" talendType="id_Float">
+            <initialValue xmi:id="_bBSx82fBEfCppuAoUVneOQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx9GfBEfCppuAoUVneOQ" name="SUM6" label="SUM6" length="126" sourceType="FLOAT" talendType="id_Float">
+            <initialValue xmi:id="_bBSx9WfBEfCppuAoUVneOQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bBSx9mfBEfCppuAoUVneOQ" name="SUM7" label="SUM7" length="126" sourceType="FLOAT" talendType="id_Float">
+            <initialValue xmi:id="_bBSx92fBEfCppuAoUVneOQ"/>
+          </feature>
+        </subscribers>
+      </cdcTypes>
+    </cdcConns>
+    <parameters xmi:id="_lNtukmQIEfCvr_ikEGkoYw" key="CONN_PARA_KEY_USERNAME" value="origem"/>
+    <parameters xmi:id="_rzVasGZYEfCoJupa3YtxzQ" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_ldzZF2QIEfCvr_ikEGkoYw" name="ORIGEM" dataManager="_lNtukGQIEfCvr_ikEGkoYw">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_FvFgIGZbEfCoJupa3YtxzQ" name="CUSTOMER" id="_FvDq8GZbEfCoJupa3YtxzQ" label="CUSTOMER" tableType="TABLE" attachedCDC="true" activatedCDC="true">
+      <feature xsi:type="relational:TdColumn" xmi:id="_FvFgIWZbEfCoJupa3YtxzQ" name="CUSTID" label="CUSTID" length="38" sourceType="NUMBER" talendType="id_BigDecimal" key="true" nullable="false">
+        <taggedValue xmi:id="_FvFgImZbEfCoJupa3YtxzQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_FvFgI2ZbEfCoJupa3YtxzQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_FvFgJGZbEfCoJupa3YtxzQ" name="NUMBER" numericPrecisionRadix="10" javaDataType="2"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_FvFgJWZbEfCoJupa3YtxzQ" name="CUSTOMERNAME" label="CUSTOMERNAME" length="255" sourceType="VARCHAR2" talendType="id_String">
+        <taggedValue xmi:id="_FvFgJmZbEfCoJupa3YtxzQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_FvFgJ2ZbEfCoJupa3YtxzQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_FvFgKGZbEfCoJupa3YtxzQ" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_FvFgKWZbEfCoJupa3YtxzQ" name="CUSTOMERADDRESS" label="CUSTOMERADDRESS" length="255" sourceType="VARCHAR2" talendType="id_String">
+        <taggedValue xmi:id="_FvFgKmZbEfCoJupa3YtxzQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_FvFgK2ZbEfCoJupa3YtxzQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_FvFgLGZbEfCoJupa3YtxzQ" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_FvFgLWZbEfCoJupa3YtxzQ" name="IDSTATE" label="IDSTATE" length="38" sourceType="NUMBER" talendType="id_BigDecimal">
+        <taggedValue xmi:id="_FvFgLmZbEfCoJupa3YtxzQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_FvFgL2ZbEfCoJupa3YtxzQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_FvFgMGZbEfCoJupa3YtxzQ" name="NUMBER" numericPrecisionRadix="10" javaDataType="2" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_FvFgMWZbEfCoJupa3YtxzQ" name="ID2" label="ID2" length="38" sourceType="NUMBER" talendType="id_BigDecimal">
+        <taggedValue xmi:id="_FvFgMmZbEfCoJupa3YtxzQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_FvFgM2ZbEfCoJupa3YtxzQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_FvFgNGZbEfCoJupa3YtxzQ" name="NUMBER" numericPrecisionRadix="10" javaDataType="2" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_FvFgNWZbEfCoJupa3YtxzQ" name="REGTIME" label="REGTIME" length="255" sourceType="VARCHAR2" talendType="id_String">
+        <taggedValue xmi:id="_FvFgNmZbEfCoJupa3YtxzQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_FvFgN2ZbEfCoJupa3YtxzQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_FvFgOGZbEfCoJupa3YtxzQ" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_FvFgOWZbEfCoJupa3YtxzQ" name="REGISTERTIME" label="REGISTERTIME" length="7" sourceType="DATE" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_FvFgOmZbEfCoJupa3YtxzQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_FvFgO2ZbEfCoJupa3YtxzQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_FvFgPGZbEfCoJupa3YtxzQ" name="DATE" numericPrecisionRadix="10" javaDataType="93" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_FvFgPWZbEfCoJupa3YtxzQ" name="SUM1" label="SUM1" length="126" sourceType="FLOAT" talendType="id_Float">
+        <taggedValue xmi:id="_FvFgPmZbEfCoJupa3YtxzQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_FvFgP2ZbEfCoJupa3YtxzQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_FvFgQGZbEfCoJupa3YtxzQ" name="FLOAT" numericPrecisionRadix="10" javaDataType="6" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_FvFgQWZbEfCoJupa3YtxzQ" name="SUM2" label="SUM2" length="126" sourceType="FLOAT" talendType="id_Float">
+        <taggedValue xmi:id="_FvFgQmZbEfCoJupa3YtxzQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_FvFgQ2ZbEfCoJupa3YtxzQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_FvFgRGZbEfCoJupa3YtxzQ" name="FLOAT" numericPrecisionRadix="10" javaDataType="6" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_FvFgRWZbEfCoJupa3YtxzQ" name="SUM3" label="SUM3" length="126" sourceType="FLOAT" talendType="id_Float">
+        <taggedValue xmi:id="_FvFgRmZbEfCoJupa3YtxzQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_FvFgR2ZbEfCoJupa3YtxzQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_FvFgSGZbEfCoJupa3YtxzQ" name="FLOAT" numericPrecisionRadix="10" javaDataType="6" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_FvFgSWZbEfCoJupa3YtxzQ" name="SUM4" label="SUM4" length="126" sourceType="FLOAT" talendType="id_Float">
+        <taggedValue xmi:id="_FvFgSmZbEfCoJupa3YtxzQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_FvFgS2ZbEfCoJupa3YtxzQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_FvFgTGZbEfCoJupa3YtxzQ" name="FLOAT" numericPrecisionRadix="10" javaDataType="6" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_FvFgTWZbEfCoJupa3YtxzQ" name="SUM5" label="SUM5" length="126" sourceType="FLOAT" talendType="id_Float">
+        <taggedValue xmi:id="_FvFgTmZbEfCoJupa3YtxzQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_FvFgT2ZbEfCoJupa3YtxzQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_FvFgUGZbEfCoJupa3YtxzQ" name="FLOAT" numericPrecisionRadix="10" javaDataType="6" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_FvFgUWZbEfCoJupa3YtxzQ" name="SUM6" label="SUM6" length="126" sourceType="FLOAT" talendType="id_Float">
+        <taggedValue xmi:id="_FvFgUmZbEfCoJupa3YtxzQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_FvFgU2ZbEfCoJupa3YtxzQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_FvFgVGZbEfCoJupa3YtxzQ" name="FLOAT" numericPrecisionRadix="10" javaDataType="6" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_FvFgVWZbEfCoJupa3YtxzQ" name="SUM7" label="SUM7" length="126" sourceType="FLOAT" talendType="id_Float">
+        <taggedValue xmi:id="_FvFgVmZbEfCoJupa3YtxzQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_FvFgV2ZbEfCoJupa3YtxzQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_FvFgWGZbEfCoJupa3YtxzQ" name="FLOAT" numericPrecisionRadix="10" javaDataType="6" nullable="columnNullable"/>
+      </feature>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_WFCTMGfBEfCppuAoUVneOQ" name="CUSTS" id="_WE7lgGfBEfCppuAoUVneOQ" label="CUSTS" tableType="TABLE" attachedCDC="true" activatedCDC="true">
+      <feature xsi:type="relational:TdColumn" xmi:id="_WFCTMWfBEfCppuAoUVneOQ" name="CUSTID" label="CUSTID" length="38" sourceType="NUMBER" talendType="id_BigDecimal" key="true" nullable="false">
+        <taggedValue xmi:id="_WFCTMmfBEfCppuAoUVneOQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_WFCTM2fBEfCppuAoUVneOQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_WFCTNGfBEfCppuAoUVneOQ" name="NUMBER" numericPrecisionRadix="10" javaDataType="2"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_WFCTNWfBEfCppuAoUVneOQ" name="CUSTOMERNAME" label="CUSTOMERNAME" length="255" sourceType="VARCHAR2" talendType="id_String">
+        <taggedValue xmi:id="_WFCTNmfBEfCppuAoUVneOQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_WFCTN2fBEfCppuAoUVneOQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_WFCTOGfBEfCppuAoUVneOQ" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_WFCTOWfBEfCppuAoUVneOQ" name="CUSTOMERADDRESS" label="CUSTOMERADDRESS" length="255" sourceType="VARCHAR2" talendType="id_String">
+        <taggedValue xmi:id="_WFCTOmfBEfCppuAoUVneOQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_WFCTO2fBEfCppuAoUVneOQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_WFCTPGfBEfCppuAoUVneOQ" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_WFCTPWfBEfCppuAoUVneOQ" name="IDSTATE" label="IDSTATE" length="38" sourceType="NUMBER" talendType="id_BigDecimal">
+        <taggedValue xmi:id="_WFCTPmfBEfCppuAoUVneOQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_WFCTP2fBEfCppuAoUVneOQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_WFCTQGfBEfCppuAoUVneOQ" name="NUMBER" numericPrecisionRadix="10" javaDataType="2" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_WFCTQWfBEfCppuAoUVneOQ" name="ID2" label="ID2" length="38" sourceType="NUMBER" talendType="id_BigDecimal">
+        <taggedValue xmi:id="_WFCTQmfBEfCppuAoUVneOQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_WFCTQ2fBEfCppuAoUVneOQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_WFCTRGfBEfCppuAoUVneOQ" name="NUMBER" numericPrecisionRadix="10" javaDataType="2" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_WFCTRWfBEfCppuAoUVneOQ" name="REGTIME" label="REGTIME" length="255" sourceType="VARCHAR2" talendType="id_String">
+        <taggedValue xmi:id="_WFCTRmfBEfCppuAoUVneOQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_WFCTR2fBEfCppuAoUVneOQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_WFCTSGfBEfCppuAoUVneOQ" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_WFCTSWfBEfCppuAoUVneOQ" name="REGISTERTIME" label="REGISTERTIME" length="7" sourceType="DATE" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_WFCTSmfBEfCppuAoUVneOQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_WFCTS2fBEfCppuAoUVneOQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_WFCTTGfBEfCppuAoUVneOQ" name="DATE" numericPrecisionRadix="10" javaDataType="93" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_WFCTTWfBEfCppuAoUVneOQ" name="SUM1" label="SUM1" length="126" sourceType="FLOAT" talendType="id_Float">
+        <taggedValue xmi:id="_WFCTTmfBEfCppuAoUVneOQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_WFCTT2fBEfCppuAoUVneOQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_WFCTUGfBEfCppuAoUVneOQ" name="FLOAT" numericPrecisionRadix="10" javaDataType="6" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_WFCTUWfBEfCppuAoUVneOQ" name="SUM2" label="SUM2" length="126" sourceType="FLOAT" talendType="id_Float">
+        <taggedValue xmi:id="_WFCTUmfBEfCppuAoUVneOQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_WFCTU2fBEfCppuAoUVneOQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_WFCTVGfBEfCppuAoUVneOQ" name="FLOAT" numericPrecisionRadix="10" javaDataType="6" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_WFCTVWfBEfCppuAoUVneOQ" name="SUM3" label="SUM3" length="126" sourceType="FLOAT" talendType="id_Float">
+        <taggedValue xmi:id="_WFCTVmfBEfCppuAoUVneOQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_WFCTV2fBEfCppuAoUVneOQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_WFCTWGfBEfCppuAoUVneOQ" name="FLOAT" numericPrecisionRadix="10" javaDataType="6" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_WFCTWWfBEfCppuAoUVneOQ" name="SUM4" label="SUM4" length="126" sourceType="FLOAT" talendType="id_Float">
+        <taggedValue xmi:id="_WFCTWmfBEfCppuAoUVneOQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_WFCTW2fBEfCppuAoUVneOQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_WFCTXGfBEfCppuAoUVneOQ" name="FLOAT" numericPrecisionRadix="10" javaDataType="6" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_WFCTXWfBEfCppuAoUVneOQ" name="SUM5" label="SUM5" length="126" sourceType="FLOAT" talendType="id_Float">
+        <taggedValue xmi:id="_WFCTXmfBEfCppuAoUVneOQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_WFCTX2fBEfCppuAoUVneOQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_WFCTYGfBEfCppuAoUVneOQ" name="FLOAT" numericPrecisionRadix="10" javaDataType="6" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_WFCTYWfBEfCppuAoUVneOQ" name="SUM6" label="SUM6" length="126" sourceType="FLOAT" talendType="id_Float">
+        <taggedValue xmi:id="_WFCTYmfBEfCppuAoUVneOQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_WFCTY2fBEfCppuAoUVneOQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_WFCTZGfBEfCppuAoUVneOQ" name="FLOAT" numericPrecisionRadix="10" javaDataType="6" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_WFCTZWfBEfCppuAoUVneOQ" name="SUM7" label="SUM7" length="126" sourceType="FLOAT" talendType="id_Float">
+        <taggedValue xmi:id="_WFCTZmfBEfCppuAoUVneOQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_WFCTZ2fBEfCppuAoUVneOQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_WFCTaGfBEfCppuAoUVneOQ" name="FLOAT" numericPrecisionRadix="10" javaDataType="6" nullable="columnNullable"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Schema>
+</xmi:XMI>

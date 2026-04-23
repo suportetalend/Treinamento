@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_rGnnsPvdEe6nu8DE3lmnew" confirmationNeeded="false" hide="false" name="Dev">
+    <contextParameter xmi:id="_rGnnsfvdEe6nu8DE3lmnew" comment="" name="RowSeparator" prompt="RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter xmi:id="_rGoOwPvdEe6nu8DE3lmnew" comment="" name="FieldSeparator" prompt="FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="“;”"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_rGoOwfvdEe6nu8DE3lmnew" confirmationNeeded="false" hide="false" name="Prod">
+    <contextParameter xmi:id="_rGoOwvvdEe6nu8DE3lmnew" comment="" name="RowSeparator" prompt="RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter xmi:id="_rGoOw_vdEe6nu8DE3lmnew" comment="" name="FieldSeparator" prompt="FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="“;”"/>
+  </talendfile:ContextType>
+</xmi:XMI>

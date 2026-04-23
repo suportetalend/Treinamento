@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_gTROQD9IEfGMSJU4ynQphQ" name="Treinamento_DB" id="_aK8lID9IEfGMSJU4ynQphQ" label="Treinamento_DB" dataPackage="_g3KlgD9IEfGMSJU4ynQphQ" DatabaseType="MySQL" DriverClass="com.mysql.cj.jdbc.Driver" URL="jdbc:mysql://treinamento-talend.cyxnbr4ijbye.us-east-1.rds.amazonaws.com:3306/treinamento_sysvision?noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" dbVersionString="MYSQL_8" Port="3306" Username="sysvision" Password="enc:system.encryption.key.v1:ExKtYMIGAsfB+Jkrca5eYwStYyS6IfLhPcCVmUzvW6E420QQFx/F39o6daimGDRzP9enPmWvmTuoFYCF" ServerName="treinamento-talend.cyxnbr4ijbye.us-east-1.rds.amazonaws.com" DatasourceName="" FileFieldName="" SID="treinamento_sysvision" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_gTROQT9IEfGMSJU4ynQphQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_gTqP0D9IEfGMSJU4ynQphQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_gTvvYD9IEfGMSJU4ynQphQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_gTvvYT9IEfGMSJU4ynQphQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_gTvvYj9IEfGMSJU4ynQphQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_gTvvYz9IEfGMSJU4ynQphQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_gTvvZD9IEfGMSJU4ynQphQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_gTvvZT9IEfGMSJU4ynQphQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_gjkUED9IEfGMSJU4ynQphQ" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_gjkUET9IEfGMSJU4ynQphQ" tag="DB ProductVersion" value="8.4.8"/>
+    <taggedValue xmi:id="_gjkUEj9IEfGMSJU4ynQphQ" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_gTROQj9IEfGMSJU4ynQphQ" key="CONN_PARA_KEY_USERNAME" value="sysvision"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_g3KlgD9IEfGMSJU4ynQphQ" name="treinamento_sysvision" dataManager="_gTROQD9IEfGMSJU4ynQphQ"/>
+</xmi:XMI>

@@ -1,0 +1,64 @@
+package routines;
+
+public  class customRoutines {
+	
+	static int usID = 1;
+	static int deID = 1;
+	static int frID = 1;
+	static int ukID = 1;
+	static int itID = 1;
+	
+	 /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+	
+    public static String generateUID(String Country) {
+    	
+    	
+        if (Country == null) {
+        	System.out.println("Parameter Country is empty.");
+        	return "UNKNOWN";
+        }
+        String countryCode = "";
+		int currentID = 0;
+		
+		switch (Country.trim().toLowerCase()) {
+		case "usa":
+			countryCode = "US";
+			currentID = usID;
+			usID ++;
+			break;
+		case "deutschland":
+			countryCode = "DE";
+			currentID = deID;
+			deID ++;
+			break;
+		case "united kingdom":
+			countryCode = "UK";
+			currentID = ukID;
+			ukID ++;
+			break;
+		case "france":
+			countryCode = "FR";
+			currentID = frID;
+			frID ++;
+			break;
+		case "italia":
+			countryCode = "IT";
+			currentID = itID;	
+			itID ++;
+			break;
+	}
+
+	return countryCode+String.format("%10s", currentID+"").replace(' ', '0');
+    }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_okqrgEMHEfCuq8jbKNiaiw" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_okqrgUMHEfCuq8jbKNiaiw" comment="" name="SQL_TREINAMENTO_Login" prompt="SQL_TREINAMENTO_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="talend"/>
+  <contextParameter xmi:id="_okqrgkMHEfCuq8jbKNiaiw" comment="" name="SQL_TREINAMENTO_Port" prompt="SQL_TREINAMENTO_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="3306"/>
+  <contextParameter xmi:id="_okqrg0MHEfCuq8jbKNiaiw" comment="" name="SQL_TREINAMENTO_Password" prompt="SQL_TREINAMENTO_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:zeE9IGl2/ptKzj4/J1ZYiD3lz0gdIIMug4BGBXM7YzdA7Q=="/>
+  <contextParameter xmi:id="_okqrhEMHEfCuq8jbKNiaiw" comment="" name="SQL_TREINAMENTO_Database" prompt="SQL_TREINAMENTO_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="TRN_Talend"/>
+  <contextParameter xmi:id="_okqrhUMHEfCuq8jbKNiaiw" comment="" name="SQL_TREINAMENTO_AdditionalParams" prompt="SQL_TREINAMENTO_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+  <contextParameter xmi:id="_okqrhkMHEfCuq8jbKNiaiw" comment="" name="SQL_TREINAMENTO_Server" prompt="SQL_TREINAMENTO_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="10.150.70.229"/>
+</talendfile:ContextType>

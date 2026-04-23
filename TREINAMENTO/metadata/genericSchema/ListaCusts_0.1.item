@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_rLkhwvi_Ee612e8GNSaGow" comment="connectionComment" label="connectionLabel" dataPackage="_rLkhw_i_Ee612e8GNSaGow"/>
+  <TalendMetadata:GenericPackage xmi:id="_rLkhw_i_Ee612e8GNSaGow" dataManager="_rLkhwvi_Ee612e8GNSaGow">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_rLkhxPi_Ee612e8GNSaGow" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rLkhxfi_Ee612e8GNSaGow" name="Id" id="7512" label="Id" length="3" precision="-1" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_rLkhxvi_Ee612e8GNSaGow" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rLkhx_i_Ee612e8GNSaGow" name="First" id="7513" label="First" length="15" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_rLkhyPi_Ee612e8GNSaGow"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rLkhyfi_Ee612e8GNSaGow" name="Last" id="7514" label="Last" length="15" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_rLkhyvi_Ee612e8GNSaGow"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rLkhy_i_Ee612e8GNSaGow" name="Number" id="7515" label="Number" length="5" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_rLkhzPi_Ee612e8GNSaGow" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rLkhzfi_Ee612e8GNSaGow" name="Street" id="7516" label="Street" length="21" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_rLkhzvi_Ee612e8GNSaGow"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rLkhz_i_Ee612e8GNSaGow" name="City" id="7517" label="City" length="21" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_rLkh0Pi_Ee612e8GNSaGow"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rLkh0fi_Ee612e8GNSaGow" name="State" id="7518" label="State" length="2" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_rLkh0vi_Ee612e8GNSaGow"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

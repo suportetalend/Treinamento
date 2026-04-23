@@ -1,0 +1,1773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:UwPEoeGvU1g4XDEXaPXwFkwpA2DCWhLbzJA9y2UD" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/Sysvision/workspace_treina/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tMysqlOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;10.150.70.229&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;TRN_Talend&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Xm/+3IeOIzkpJN2FVJFOBtVOcMB0oA4Ruv7LwlA/wZZswX2b"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statCatcher&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logCatcher&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;flowMeterCatcher&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Students/DataIntBasics/RepositoryMetadata/refCusts.txt&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="6"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="__Av-oPjOEe612e8GNSaGow - CustsSchema" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/Workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerAddress"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="idState"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RegTime"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RegisterTime"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum4"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum5"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum6"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum7"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerName"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerAddress"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="idState"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id2"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RegTime"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RegisterTime"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum1"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum2"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum3"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum4"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum5"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum6"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum7"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="CUSTOMER"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CustsSchema" name="tFileInputDelimited_1">
+      <column comment="" key="true" length="2" name="CustID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="CustomerName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="CustomerAddress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="idState" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="id2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="RegTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="RegisterTime" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="CustsSchema" name="REJECT">
+      <column comment="" key="true" length="2" name="CustID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="CustomerName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="CustomerAddress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="idState" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="id2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="RegTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="RegisterTime" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_NUMBER" value="4" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_RnpG4GQIEfCvr_ikEGkoYw" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;10.150.71.219&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;10.150.71.219&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="ORACLE_SID" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;orcl&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;orcl&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;ORIGEM&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;origem&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:KVDjvNIjkZP/VDwJH7m5z665GWV0bwk3FvfHEpOFkWt/I8ho"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CUSTOMER&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="LABEL" name="NOTE" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id" show="false"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerAddress"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="idState"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id2"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RegTime"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RegisterTime"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum2"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum3"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum4"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum5"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum6"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum7"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_UPPERCASE" value="false"/>
+    <elementParameter field="CHECK" name="CONTAIN_BLOB_FROM_OTHER_DB" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="CHECK" name="USE_BATCH_AND_USE_CONN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATE_TYPE" value="true"/>
+    <elementParameter field="CHECK" name="TRIM_CHAR" value="true"/>
+    <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="CUSTOMER"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CustsSchema" name="tDBOutput_1">
+      <column comment="" key="true" length="5" name="CustID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CustomerName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CustomerAddress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="idState" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="id2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="RegTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="RegisterTime" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="CustsSchema" name="REJECT">
+      <column comment="" key="true" length="5" name="CustID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CustomerName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CustomerAddress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="idState" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="id2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="RegTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="RegisterTime" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleCDC" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCDC_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_37kU0GQIEfCvr_ikEGkoYw" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;10.150.71.219&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;10.150.71.219&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="ORACLE_SID" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;orcl&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;orcl&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;PUBLISHER&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;publisher&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:9jp0xoCQE2mRX8wIzKG30N+7Z1P5gSnABehaM7/DUog5pxQEK8/X"/>
+    <elementParameter field="CLOSED_LIST" name="CDC_MODE" value="TRIGGER"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATE_LCRTYPE" value="LCR_OBJECT" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_RnpG4GQIEfCvr_ikEGkoYw - CUSTOMER" show="false"/>
+    <elementParameter field="DBTABLE" name="DATATABLE" value="&quot;CUSTOMER&quot;"/>
+    <elementParameter field="TEXT" name="OUTBOUND_SERVER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_DATA_TABLE_SCHEMA" value="false"/>
+    <elementParameter field="TEXT" name="DATA_TABLE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SUSCRIBER" value="&quot;APP1&quot;"/>
+    <elementParameter field="LABEL" name="EVENTS_TYPE" value=""/>
+    <elementParameter field="CHECK" name="EVENTS_TYPE_INSERT" value="true"/>
+    <elementParameter field="CHECK" name="EVENTS_TYPE_UPDATE" value="true"/>
+    <elementParameter field="CHECK" name="EVENTS_TYPE_DELETE" value="true"/>
+    <elementParameter field="TEXT" name="LIMIT" value="&quot;10000&quot;"/>
+    <elementParameter field="CHECK" name="KEEP_LISTENING" value="true" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="KEEP_CDC_DATAS" value="false"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTOMERNAME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTOMERADDRESS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IDSTATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REGTIME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REGISTERTIME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM4"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM5"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM6"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM7"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TALEND_CDC_TYPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TALEND_CDC_CREATION_DATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="ACK_INTERVAL" value="30" show="false"/>
+    <elementParameter field="TEXT" name="IDLE_TIMEOUT" value="1" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__DATATABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CUSTOMER" name="tDBCDC_1">
+      <column comment="" key="true" length="38" name="CUSTID" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CUSTOMERNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CUSTOMERADDRESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="IDSTATE" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="ID2" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="REGTIME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="7" name="REGISTERTIME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM1" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM2" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM3" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM4" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM5" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM6" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM7" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="1" name="TALEND_CDC_TYPE" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="11" name="TALEND_CDC_CREATION_DATE" nullable="true" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTOMERNAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTOMERADDRESS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IDSTATE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID2"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REGTIME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REGISTERTIME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM1"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM2"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM3"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM4"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM5"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM6"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM7"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TALEND_CDC_TYPE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TALEND_CDC_CREATION_DATE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CUSTOMER" name="tLogRow_1">
+      <column comment="" key="true" length="38" name="CUSTID" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CUSTOMERNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CUSTOMERADDRESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="IDSTATE" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="ID2" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="REGTIME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="7" name="REGISTERTIME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM1" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM2" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM3" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM4" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM5" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM6" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM7" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="1" name="TALEND_CDC_TYPE" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="11" name="TALEND_CDC_CREATION_DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="672">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Students/DataIntBasics/RepositoryMetadata/refCusts.txt&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="6"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="__Av-oPjOEe612e8GNSaGow - CustsSchema" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/Workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerAddress"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="idState"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RegTime"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RegisterTime"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum4"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum5"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum6"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum7"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerName"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerAddress"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="idState"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id2"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RegTime"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RegisterTime"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum1"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum2"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum3"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum4"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum5"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum6"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum7"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="CUSTOMER"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CustsSchema" name="tFileInputDelimited_2">
+      <column comment="" key="true" length="2" name="CustID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="CustomerName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="CustomerAddress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="idState" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="id2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="RegTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="RegisterTime" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="CustsSchema" name="REJECT">
+      <column comment="" key="true" length="2" name="CustID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="CustomerName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="CustomerAddress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="idState" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="id2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="RegTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="RegisterTime" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="672">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_NUMBER" value="4" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_RnpG4GQIEfCvr_ikEGkoYw" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;10.150.71.219&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;10.150.71.219&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="ORACLE_SID" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;orcl&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;orcl&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;ORIGEM&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;origem&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wTKcdbJPBfWep6tqpWJkmDesuUUnwLQ6YXl7upnPsuAiDCsr"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CUSTOMER&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="LABEL" name="NOTE" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE_OR_INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id" show="false"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerAddress"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="idState"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id2"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RegTime"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RegisterTime"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum2"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum3"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum4"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum5"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum6"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum7"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_UPPERCASE" value="false"/>
+    <elementParameter field="CHECK" name="CONTAIN_BLOB_FROM_OTHER_DB" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_AND_USE_CONN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATE_TYPE" value="true"/>
+    <elementParameter field="CHECK" name="TRIM_CHAR" value="true"/>
+    <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="CUSTOMER"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CustsSchema" name="tDBOutput_2">
+      <column comment="" key="true" length="5" name="CustID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CustomerName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CustomerAddress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="idState" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="id2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="RegTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="RegisterTime" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="CustsSchema" name="REJECT">
+      <column comment="" key="true" length="5" name="CustID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CustomerName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CustomerAddress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="idState" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="id2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="RegTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="RegisterTime" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleCDC" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCDC_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_37kU0GQIEfCvr_ikEGkoYw" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;10.150.71.219&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;10.150.71.219&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="ORACLE_SID" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;orcl&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;orcl&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;PUBLISHER&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;publisher&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:1VFwwbwPkPkJhIEmN3u9/8qGtUn0R7wXhvN00aK4BQKiSdcgUAy/"/>
+    <elementParameter field="CLOSED_LIST" name="CDC_MODE" value="TRIGGER"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATE_LCRTYPE" value="LCR_OBJECT" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_RnpG4GQIEfCvr_ikEGkoYw - CUSTOMER" show="false"/>
+    <elementParameter field="DBTABLE" name="DATATABLE" value="&quot;CUSTOMER&quot;"/>
+    <elementParameter field="TEXT" name="OUTBOUND_SERVER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_DATA_TABLE_SCHEMA" value="false"/>
+    <elementParameter field="TEXT" name="DATA_TABLE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SUSCRIBER" value="&quot;APP1&quot;"/>
+    <elementParameter field="LABEL" name="EVENTS_TYPE" value=""/>
+    <elementParameter field="CHECK" name="EVENTS_TYPE_INSERT" value="true"/>
+    <elementParameter field="CHECK" name="EVENTS_TYPE_UPDATE" value="true"/>
+    <elementParameter field="CHECK" name="EVENTS_TYPE_DELETE" value="true"/>
+    <elementParameter field="TEXT" name="LIMIT" value="&quot;10000&quot;"/>
+    <elementParameter field="CHECK" name="KEEP_LISTENING" value="true" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="KEEP_CDC_DATAS" value="false"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTOMERNAME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTOMERADDRESS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IDSTATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REGTIME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REGISTERTIME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM4"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM5"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM6"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM7"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TALEND_CDC_TYPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TALEND_CDC_CREATION_DATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="ACK_INTERVAL" value="30" show="false"/>
+    <elementParameter field="TEXT" name="IDLE_TIMEOUT" value="1" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__DATATABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CUSTOMER" name="tDBCDC_2">
+      <column comment="" key="true" length="38" name="CUSTID" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CUSTOMERNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CUSTOMERADDRESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="IDSTATE" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="ID2" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="REGTIME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="7" name="REGISTERTIME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM1" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM2" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM3" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM4" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM5" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM6" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM7" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="1" name="TALEND_CDC_TYPE" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="11" name="TALEND_CDC_CREATION_DATE" nullable="true" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTOMERNAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTOMERADDRESS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IDSTATE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID2"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REGTIME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REGISTERTIME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM1"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM2"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM3"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM4"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM5"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM6"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM7"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TALEND_CDC_TYPE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TALEND_CDC_CREATION_DATE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CUSTOMER" name="tLogRow_2">
+      <column comment="" key="true" length="38" name="CUSTID" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CUSTOMERNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CUSTOMERADDRESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="IDSTATE" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="ID2" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="REGTIME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="7" name="REGISTERTIME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM1" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM2" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM3" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM4" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM5" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM6" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM7" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="1" name="TALEND_CDC_TYPE" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="11" name="TALEND_CDC_CREATION_DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Students/DataIntBasics/RepositoryMetadata/refCusts.txt&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="6"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="__Av-oPjOEe612e8GNSaGow - CustsSchema" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/Workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerAddress"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="idState"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RegTime"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RegisterTime"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum4"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum5"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum6"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum7"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerName"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerAddress"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="idState"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id2"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RegTime"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RegisterTime"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum1"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum2"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum3"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum4"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum5"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum6"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum7"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="CUSTOMER"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CustsSchema" name="tFileInputDelimited_3">
+      <column comment="" key="true" length="2" name="CustID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="CustomerName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="CustomerAddress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="idState" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="id2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="RegTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="RegisterTime" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="CustsSchema" name="REJECT">
+      <column comment="" key="true" length="2" name="CustID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="CustomerName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="CustomerAddress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="idState" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="id2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="RegTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="RegisterTime" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_7" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="CustID"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="4992"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CustsSchema" name="tFilterRow_7">
+      <column comment="" key="true" length="2" name="CustID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="CustomerName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="CustomerAddress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="idState" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="id2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="RegTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="RegisterTime" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FILTER" label="CustsSchema" name="FILTER">
+      <column comment="" key="true" length="2" name="CustID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="CustomerName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="CustomerAddress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="idState" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="id2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="RegTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="RegisterTime" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="CustsSchema" name="REJECT">
+      <column comment="" key="true" length="2" name="CustID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="CustomerName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="CustomerAddress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="idState" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="id2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="RegTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="RegisterTime" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_3" show="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_NUMBER" value="4" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_RnpG4GQIEfCvr_ikEGkoYw" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;10.150.71.219&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;10.150.71.219&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="ORACLE_SID" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;orcl&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;orcl&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;ORIGEM&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;origem&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:UwFrvhe41J4qezLyCloaipMnagdKprjiydyNQXv/squlTTpG"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CUSTOMER&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="LABEL" name="NOTE" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="DELETE"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id" show="false"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerAddress"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="idState"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id2"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RegTime"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RegisterTime"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum2"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum3"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum4"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum5"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum6"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sum7"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_UPPERCASE" value="false"/>
+    <elementParameter field="CHECK" name="CONTAIN_BLOB_FROM_OTHER_DB" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="CHECK" name="USE_BATCH_AND_USE_CONN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATE_TYPE" value="true"/>
+    <elementParameter field="CHECK" name="TRIM_CHAR" value="true"/>
+    <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="CUSTOMER"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CustsSchema" name="tDBOutput_3">
+      <column comment="" key="true" length="5" name="CustID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CustomerName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CustomerAddress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="idState" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="id2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="RegTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="RegisterTime" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="CustsSchema" name="REJECT">
+      <column comment="" key="true" length="5" name="CustID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CustomerName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CustomerAddress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="idState" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="id2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="RegTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="RegisterTime" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="Sum7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleCDC" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCDC_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_37kU0GQIEfCvr_ikEGkoYw" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;10.150.71.219&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;10.150.71.219&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="ORACLE_SID" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;orcl&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;orcl&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;PUBLISHER&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;publisher&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:IRSxjal8xQIDmUW37J3fc+wRBM+S7kw44CwzaNWfOkpB8jPSx8xj"/>
+    <elementParameter field="CLOSED_LIST" name="CDC_MODE" value="TRIGGER"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATE_LCRTYPE" value="LCR_OBJECT" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_RnpG4GQIEfCvr_ikEGkoYw - CUSTOMER" show="false"/>
+    <elementParameter field="DBTABLE" name="DATATABLE" value="&quot;CUSTOMER&quot;"/>
+    <elementParameter field="TEXT" name="OUTBOUND_SERVER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_DATA_TABLE_SCHEMA" value="false"/>
+    <elementParameter field="TEXT" name="DATA_TABLE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SUSCRIBER" value="&quot;APP1&quot;"/>
+    <elementParameter field="LABEL" name="EVENTS_TYPE" value=""/>
+    <elementParameter field="CHECK" name="EVENTS_TYPE_INSERT" value="true"/>
+    <elementParameter field="CHECK" name="EVENTS_TYPE_UPDATE" value="true"/>
+    <elementParameter field="CHECK" name="EVENTS_TYPE_DELETE" value="true"/>
+    <elementParameter field="TEXT" name="LIMIT" value="&quot;10000&quot;"/>
+    <elementParameter field="CHECK" name="KEEP_LISTENING" value="true" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="KEEP_CDC_DATAS" value="false"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTOMERNAME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTOMERADDRESS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IDSTATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REGTIME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REGISTERTIME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM4"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM5"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM6"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM7"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TALEND_CDC_TYPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TALEND_CDC_CREATION_DATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="ACK_INTERVAL" value="30" show="false"/>
+    <elementParameter field="TEXT" name="IDLE_TIMEOUT" value="1" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__DATATABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CUSTOMER" name="tDBCDC_3">
+      <column comment="" key="true" length="38" name="CUSTID" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CUSTOMERNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CUSTOMERADDRESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="IDSTATE" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="ID2" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="REGTIME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="7" name="REGISTERTIME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM1" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM2" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM3" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM4" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM5" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM6" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM7" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="1" name="TALEND_CDC_TYPE" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="11" name="TALEND_CDC_CREATION_DATE" nullable="true" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTOMERNAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTOMERADDRESS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IDSTATE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID2"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REGTIME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REGISTERTIME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM1"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM2"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM3"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM4"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM5"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM6"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUM7"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TALEND_CDC_TYPE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TALEND_CDC_CREATION_DATE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CUSTOMER" name="tLogRow_3">
+      <column comment="" key="true" length="38" name="CUSTID" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CUSTOMERNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CUSTOMERADDRESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="IDSTATE" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="ID2" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="REGTIME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="7" name="REGISTERTIME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM1" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM2" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM3" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM4" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM5" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM6" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="126" name="SUM7" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="1" name="TALEND_CDC_TYPE" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="11" name="TALEND_CDC_CREATION_DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tDBCDC_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBCDC_1" offsetLabelX="0" offsetLabelY="0" source="tDBCDC_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tDBOutput_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tDBCDC_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tDBCDC_2" offsetLabelX="0" offsetLabelY="0" source="tDBCDC_2" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tFileInputDelimited_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_3" target="tFilterRow_7">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_3" target="tDBCDC_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
+  <connection connectorName="FILTER" label="row7" lineStyle="0" metaname="tFilterRow_7" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_7" target="tDBOutput_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tDBCDC_3" offsetLabelX="0" offsetLabelY="0" source="tDBCDC_3" target="tLogRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="CDC Insert"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCDC_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="CDC update or Insert"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCDC_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_3" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="CDC delete ID 4992"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCDC_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
