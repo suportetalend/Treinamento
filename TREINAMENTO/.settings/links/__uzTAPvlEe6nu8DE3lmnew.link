@@ -1,0 +1,24 @@
+{
+  "itemId" : "__uzTAPvlEe6nu8DE3lmnew",
+  "contextList" : [ {
+    "contextName" : "Dev",
+    "repoId" : "_j0JVRgC-Ee-5MOeUOJdvAA",
+    "parameterList" : [ {
+      "id" : "_rGnnsfvdEe6nu8DE3lmnew",
+      "name" : "RowSeparator"
+    }, {
+      "id" : "_rGoOwPvdEe6nu8DE3lmnew",
+      "name" : "FieldSeparator"
+    } ]
+  }, {
+    "contextName" : "Prod",
+    "repoId" : "_j0JVRgC-Ee-5MOeUOJdvAA",
+    "parameterList" : [ {
+      "id" : "_rGoOwvvdEe6nu8DE3lmnew",
+      "name" : "RowSeparator"
+    }, {
+      "id" : "_rGoOw_vdEe6nu8DE3lmnew",
+      "name" : "FieldSeparator"
+    } ]
+  } ]
+}
