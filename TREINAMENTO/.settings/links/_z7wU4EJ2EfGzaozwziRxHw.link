@@ -1,0 +1,61 @@
+{
+  "itemId" : "_z7wU4EJ2EfGzaozwziRxHw",
+  "contextList" : [ {
+    "contextName" : "QA",
+    "repoId" : "_mgrsUEJ1EfGzaozwziRxHw",
+    "parameterList" : [ {
+      "id" : "_eHohR0J2EfGzaozwziRxHw",
+      "name" : "FilePath"
+    }, {
+      "id" : "_eHohRkJ2EfGzaozwziRxHw",
+      "name" : "Senha"
+    }, {
+      "id" : "_eHohRUJ2EfGzaozwziRxHw",
+      "name" : "Usuario"
+    }, {
+      "id" : "_HYyDZEJ5EfGzaozwziRxHw",
+      "name" : "RowSeparator"
+    }, {
+      "id" : "_HYyDZUJ5EfGzaozwziRxHw",
+      "name" : "FieldSeparator"
+    } ]
+  }, {
+    "contextName" : "PRD",
+    "repoId" : "_mgrsUEJ1EfGzaozwziRxHw",
+    "parameterList" : [ {
+      "id" : "_eHohQ0J2EfGzaozwziRxHw",
+      "name" : "FilePath"
+    }, {
+      "id" : "_eHohQkJ2EfGzaozwziRxHw",
+      "name" : "Senha"
+    }, {
+      "id" : "_eHohQUJ2EfGzaozwziRxHw",
+      "name" : "Usuario"
+    }, {
+      "id" : "_HYyDYkJ5EfGzaozwziRxHw",
+      "name" : "RowSeparator"
+    }, {
+      "id" : "_HYyDY0J5EfGzaozwziRxHw",
+      "name" : "FieldSeparator"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_mgrsUEJ1EfGzaozwziRxHw",
+    "parameterList" : [ {
+      "id" : "_byICckJ2EfGzaozwziRxHw",
+      "name" : "FilePath"
+    }, {
+      "id" : "_byICcUJ2EfGzaozwziRxHw",
+      "name" : "Senha"
+    }, {
+      "id" : "_byICcEJ2EfGzaozwziRxHw",
+      "name" : "Usuario"
+    }, {
+      "id" : "_HYyDYEJ5EfGzaozwziRxHw",
+      "name" : "RowSeparator"
+    }, {
+      "id" : "_HYyDYUJ5EfGzaozwziRxHw",
+      "name" : "FieldSeparator"
+    } ]
+  } ]
+}

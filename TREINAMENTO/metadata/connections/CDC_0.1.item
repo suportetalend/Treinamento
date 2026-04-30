@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_KPTQEESTEfGeNsMrfwH6eQ" name="CDC" id="_KOzg0ESTEfGeNsMrfwH6eQ" label="CDC" dataPackage="_RaLibkSTEfGeNsMrfwH6eQ" DatabaseType="MySQL" DriverClass="com.mysql.cj.jdbc.Driver" URL="jdbc:mysql://treinamento-talend.cyxnbr4ijbye.us-east-1.rds.amazonaws.com:3306/cdc?noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" dbVersionString="MYSQL_8" Port="3306" Username="sysvision" Password="enc:system.encryption.key.v1:Y5P2xBScII4FBBEG9yrAKbNsdu6ikI8nduykH2xBq/pvueM4bQ8ft0nnphkdbAUjdHnDMfvCOj7KNzTI" ServerName="treinamento-talend.cyxnbr4ijbye.us-east-1.rds.amazonaws.com" DatasourceName="" FileFieldName="" SID="cdc" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_ULs60UL-EfGiauVjC9jXnw" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_UMZeYEL-EfGiauVjC9jXnw" tag="package filter" value=""/>
+    <taggedValue xmi:id="_UMdv0EL-EfGiauVjC9jXnw" tag="Status" value=""/>
+    <taggedValue xmi:id="_UMdv0UL-EfGiauVjC9jXnw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_UMdv0kL-EfGiauVjC9jXnw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_UMdv00L-EfGiauVjC9jXnw" tag="Description" value=""/>
+    <taggedValue xmi:id="_UMdv1EL-EfGiauVjC9jXnw" tag="Author" value=""/>
+    <taggedValue xmi:id="_UMdv1UL-EfGiauVjC9jXnw" tag="otherParameter"/>
+    <taggedValue xmi:id="_Uio0IEL-EfGiauVjC9jXnw" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_Uio0IUL-EfGiauVjC9jXnw" tag="DB ProductVersion" value="8.4.8"/>
+    <taggedValue xmi:id="_UipbMEL-EfGiauVjC9jXnw" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_ULs60kL-EfGiauVjC9jXnw" key="CONN_PARA_KEY_USERNAME" value="sysvision"/>
+    <parameters xmi:id="_LF79IESTEfGeNsMrfwH6eQ" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_RaLibkSTEfGeNsMrfwH6eQ" name="cdc" dataManager="_KPTQEESTEfGeNsMrfwH6eQ"/>
+</xmi:XMI>

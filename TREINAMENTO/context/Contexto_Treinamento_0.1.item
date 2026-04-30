@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_mhEt4EJ1EfGzaozwziRxHw" confirmationNeeded="false" hide="false" name="DEV">
+    <contextParameter xmi:id="_byICcEJ2EfGzaozwziRxHw" comment="" name="Usuario" prompt="Usuario?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Luan_DEV"/>
+    <contextParameter xmi:id="_byICcUJ2EfGzaozwziRxHw" comment="" name="Senha" prompt="Senha?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:RGQBbIWUruLz10gBJ5Oo/EzQhJs56afKwikUadTfy4s="/>
+    <contextParameter xmi:id="_byICckJ2EfGzaozwziRxHw" comment="" name="FilePath" prompt="FilePath?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="C:/Users/Luan Silva/Desktop/Basico/Basic/Hands_on/ArquivosOrigem/Students/DataIntBasics/ContextVariables/DEV/DEV/"/>
+    <contextParameter xmi:id="_HYyDYEJ5EfGzaozwziRxHw" comment="" name="RowSeparator" prompt="RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="“\n”"/>
+    <contextParameter xmi:id="_HYyDYUJ5EfGzaozwziRxHw" comment="" name="FieldSeparator" prompt="FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="“;”"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_eHohQEJ2EfGzaozwziRxHw" confirmationNeeded="false" hide="false" name="PRD">
+    <contextParameter xmi:id="_eHohQUJ2EfGzaozwziRxHw" comment="" name="Usuario" prompt="Usuario?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Luan_PRD"/>
+    <contextParameter xmi:id="_eHohQkJ2EfGzaozwziRxHw" comment="" name="Senha" prompt="Senha?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:3rrTCcNeDXietSWayYSletdKdfjnP9rY8Gum+XzDiFo="/>
+    <contextParameter xmi:id="_eHohQ0J2EfGzaozwziRxHw" comment="" name="FilePath" prompt="FilePath?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="C:/Users/Luan Silva/Desktop/Basico/Basic/Hands_on/ArquivosOrigem/Students/DataIntBasics/ContextVariables/PRD/"/>
+    <contextParameter xmi:id="_HYyDYkJ5EfGzaozwziRxHw" comment="" name="RowSeparator" prompt="RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="“\n”"/>
+    <contextParameter xmi:id="_HYyDY0J5EfGzaozwziRxHw" comment="" name="FieldSeparator" prompt="FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="“;”"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_eHohREJ2EfGzaozwziRxHw" confirmationNeeded="false" hide="false" name="QA">
+    <contextParameter xmi:id="_eHohRUJ2EfGzaozwziRxHw" comment="" name="Usuario" prompt="Usuario?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Luan_QA"/>
+    <contextParameter xmi:id="_eHohRkJ2EfGzaozwziRxHw" comment="" name="Senha" prompt="Senha?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:CuUfalsAOLKptu5IOrWDaDBf6YPkflaWtp+M/i9LtZE="/>
+    <contextParameter xmi:id="_eHohR0J2EfGzaozwziRxHw" comment="" name="FilePath" prompt="FilePath?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="C:/Users/Luan Silva/Desktop/Basico/Basic/Hands_on/ArquivosOrigem/Students/DataIntBasics/ContextVariables/QA/"/>
+    <contextParameter xmi:id="_HYyDZEJ5EfGzaozwziRxHw" comment="" name="RowSeparator" prompt="RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_HYyDZUJ5EfGzaozwziRxHw" comment="" name="FieldSeparator" prompt="FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

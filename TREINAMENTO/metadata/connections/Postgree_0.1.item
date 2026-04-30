@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_wyftYEMEEfGiauVjC9jXnw" name="Postgree" id="_qlOS0EMEEfGiauVjC9jXnw" label="Postgree" dataPackage="_xBH_QEMEEfGiauVjC9jXnw" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://10.150.70.238:5432/dev_consultoria?" dbVersionString="V9_X" Port="5432" Username="consultoria" Password="enc:system.encryption.key.v1:pVBSNOuJs531Yjj9MKx0iobRVpRc2gKE1W9Tbu/U5da0RTVG5HLa" ServerName="10.150.70.238" DatasourceName="" FileFieldName="" SID="dev_consultoria" SqlSynthax="" StringQuote="" NullChar="" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_wyftYUMEEfGiauVjC9jXnw" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_wyyBQEMEEfGiauVjC9jXnw" tag="package filter" value=""/>
+    <taggedValue xmi:id="_wyyBQUMEEfGiauVjC9jXnw" tag="Status" value=""/>
+    <taggedValue xmi:id="_wyyBQkMEEfGiauVjC9jXnw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_wyyBQ0MEEfGiauVjC9jXnw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_wyyBREMEEfGiauVjC9jXnw" tag="Description" value=""/>
+    <taggedValue xmi:id="_wyyBRUMEEfGiauVjC9jXnw" tag="Author" value=""/>
+    <taggedValue xmi:id="_wyyBRkMEEfGiauVjC9jXnw" tag="otherParameter"/>
+    <taggedValue xmi:id="_w5iJgEMEEfGiauVjC9jXnw" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_w5iJgUMEEfGiauVjC9jXnw" tag="DB ProductVersion" value="18.1"/>
+    <taggedValue xmi:id="_w5iJgkMEEfGiauVjC9jXnw" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_wyftYkMEEfGiauVjC9jXnw" key="CONN_PARA_KEY_USERNAME" value="consultoria"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_xBH_QEMEEfGiauVjC9jXnw" name="dev_consultoria" dataManager="_wyftYEMEEfGiauVjC9jXnw">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_xBH_QUMEEfGiauVjC9jXnw" name="dev_luan"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_xBH_QkMEEfGiauVjC9jXnw" name="information_schema"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_xBH_Q0MEEfGiauVjC9jXnw" name="pg_catalog"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_xBH_REMEEfGiauVjC9jXnw" name="public"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
